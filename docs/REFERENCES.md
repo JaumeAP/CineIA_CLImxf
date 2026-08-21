@@ -73,6 +73,41 @@ aquest fitxer n'enllaça també les fonts oficials per referència i verificaci�
   Track File (ST 429-18) n'és una especialització (referenciat per
   l'ST 430-14, no s'ha pogut recuperar un enllaç PDF d'accés lliure).
 
+## 4. Predecessor propietari de l'IAB i perfil global de compatibilitat DCP
+
+- **SMPTE RDD 29:2019** — *Dolby Atmos® Bitstream Specification*
+  El bitstream propietari original de Dolby Atmos, anterior a l'estandardització
+  IAB (ST 2098-2). Estructura pràcticament idèntica (`ATMOSFrame` en lloc
+  d'`IAFrame`, `BedDefinition`, `ObjectDefinition`...) — és l'avantpassat
+  directe del format que genera `CineIA_CLI`. No conté cap informació de
+  transport de xarxa.
+  [docs/specs/RDD29_2019_Dolby_Atmos_Bitstream.pdf](specs/RDD29_2019_Dolby_Atmos_Bitstream.pdf) ·
+  https://pub.smpte.org/pub/rdd29/rdd29-2019.pdf
+
+- **SMPTE RDD 28:2014** — *Dolby Atmos® Print Master File Specification*
+  Defineix com s'emmagatzema l'àudio i les metadades Atmos abans d'empaquetar-les
+  (el DCDM, el master previ al DCP). No conté informació de transport de xarxa.
+  [docs/specs/RDD28_2014_Dolby_Atmos_Print_Master_File.pdf](specs/RDD28_2014_Dolby_Atmos_Print_Master_File.pdf) ·
+  https://pub.smpte.org/pub/rdd28/rdd28-2014.pdf
+
+- **SMPTE RDD 52:2020** — *SMPTE DCP Bv2.1 Application Profile*
+  Requisits i constriccions perquè un DCP es pugui reproduir en el màxim de
+  sistemes possibles arreu del món (el perfil "Bv2.1" habitual en distribució
+  general). No conté informació de transport de xarxa.
+  [docs/specs/RDD52_2020_DCP_Bv21_Application_Profile.pdf](specs/RDD52_2020_DCP_Bv21_Application_Profile.pdf) ·
+  https://pub.smpte.org/pub/rdd52/rdd52-2020.pdf
+
+- **SMPTE ER 1008:2022** — *Digital Cinema — Overview for the SMPTE 428, 429,
+  430, 431, 432, and 433 Document Suites*
+  Índex oficial de **tots** els estàndards de cinema digital SMPTE, organitzats
+  per família (427 Seguretat, 428 Master de Distribució, 429 Empaquetat,
+  430 Operacions, 431 Qualitat, 432 Processament de Font Digital,
+  433 Tipus de Dades XML), més un annex de Registered Disclosure Documents
+  (RDD) rellevants. Útil com a mapa per localitzar qualsevol altre document
+  relacionat no llistat aquí.
+  [docs/specs/ER1008_2022_Digital_Cinema_Document_Suites_Overview.pdf](specs/ER1008_2022_Digital_Cinema_Document_Suites_Overview.pdf) ·
+  https://5253154.fs1.hubspotusercontent-na1.net/hubfs/5253154/SMPTE-ER-DigitalCinemaOverviewDocumentSuties.pdf
+
 ## Nota sobre la interconnexió física real (RJ45)
 
 El port físic "Dolby Atmos Connect" del CP950/CP950A i el seu suport per a
