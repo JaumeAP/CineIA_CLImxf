@@ -73,6 +73,59 @@ aquest fitxer n'enllaça també les fonts oficials per referència i verificaci�
   Track File (ST 429-18) n'és una especialització (referenciat per
   l'ST 430-14, no s'ha pogut recuperar un enllaç PDF d'accés lliure).
 
+### 3.1 Resta de la sèrie ST 430 (Operacions) — protocols de xarxa/TCP intra-teatre
+
+Aquesta família cobreix tota la comunicació en xarxa entre els sistemes d'un
+cinema (servidor, gestor de pantalla SMS, dispositius de seguretat...). No és
+específica d'àudio immersiu, però és la família on realment apareix **TCP**
+de forma explícita.
+
+- **SMPTE ST 430-10:2010** — *Auxiliary Content Synchronization (ACS) Protocol*
+  Confirma explícitament l'ús de TCP: *"The Control Protocol is a TCP-based
+  protocol... The DCS shall listen for a connection on TCP port 4170."*
+  [docs/specs/ST430-10_2010_ACS_Protocol.pdf](specs/ST430-10_2010_ACS_Protocol.pdf) ·
+  https://pub.smpte.org/latest/st430-10/st0430-10-2010.pdf
+
+- **SMPTE ST 430-17:2022** — *SMS-OMB Communications Protocol Specification*
+  Protocol de comunicació SMS↔OMB; especifica connexió TCP amb adreça IP i
+  port configurables per TLS.
+  [docs/specs/ST430-17_2022_SMS-OMB_Communications_Protocol.pdf](specs/ST430-17_2022_SMS-OMB_Communications_Protocol.pdf) ·
+  https://pub.smpte.org/latest/st430-17/st0430-17-2022.pdf
+
+- **SMPTE ST 430-6:2010** — *Auditorium Security Messages for Intra-Theater Communications*
+  Missatges de seguretat entre dispositius del teatre, sobre socket TLS.
+  [docs/specs/ST430-6_2010_Auditorium_Security_Messages.pdf](specs/ST430-6_2010_Auditorium_Security_Messages.pdf) ·
+  https://pub.smpte.org/latest/st430-6/st0430-6-2010.pdf
+
+- **SMPTE ST 430-2:2017** — *Digital Certificate*
+  [docs/specs/ST430-2_2017_Digital_Certificate.pdf](specs/ST430-2_2017_Digital_Certificate.pdf) ·
+  https://pub.smpte.org/latest/st430-2/st0430-2-2017.pdf
+
+- **SMPTE ST 430-3:2012** — *Generic Extra-Theater Message Format*
+  [docs/specs/ST430-3_2012_Generic_ExtraTheater_Message.pdf](specs/ST430-3_2012_Generic_ExtraTheater_Message.pdf) ·
+  https://pub.smpte.org/latest/st430-3/st0430-3-2012.pdf
+
+- **SMPTE ST 430-4:2008** — *Log Record Specification*
+  [docs/specs/ST430-4_2008_Log_Record_Specification.pdf](specs/ST430-4_2008_Log_Record_Specification.pdf) ·
+  https://pub.smpte.org/latest/st430-4/st0430-4-2008.pdf
+
+- **SMPTE ST 430-9:2008** — *Key Delivery Bundle*
+  [docs/specs/ST430-9_2008_Key_Delivery_Bundle.pdf](specs/ST430-9_2008_Key_Delivery_Bundle.pdf) ·
+  https://pub.smpte.org/latest/st430-9/st0430-9-2008.pdf
+
+- **SMPTE ST 430-15:2017** — *Facility List Message Exchange Protocol*
+  [docs/specs/ST430-15_2017_Facility_List_Message_Exchange.pdf](specs/ST430-15_2017_Facility_List_Message_Exchange.pdf) ·
+  https://pub.smpte.org/latest/st430-15/st0430-15-2017.pdf
+
+- **SMPTE ST 430-16:2017** — *Extended Facility List Message*
+  [docs/specs/ST430-16_2017_Extended_Facility_List_Message.pdf](specs/ST430-16_2017_Extended_Facility_List_Message.pdf) ·
+  https://pub.smpte.org/latest/st430-16/st0430-16-2017.pdf
+
+- **No recuperats** (URL d'accés lliure no localitzada): ST 430-1:2017 (Key
+  Delivery Message), ST 430-5:2011 (Security Log Event Class), ST 430-11:2011
+  (Auxiliary Resource Presentation List), ST 430-12:2014 (FSK Synchronization
+  Protocol).
+
 ## 4. Predecessor propietari de l'IAB i perfil global de compatibilitat DCP
 
 - **SMPTE RDD 29:2019** — *Dolby Atmos® Bitstream Specification*
