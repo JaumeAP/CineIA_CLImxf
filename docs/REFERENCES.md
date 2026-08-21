@@ -4,33 +4,39 @@ Aquest document recull els estàndards oficials (SMPTE i ISDCF) rellevants per a
 `CineIA_CLI`: des del format del bitstream IAB fins al seu transport en xarxa
 cap a un processador de so de cinema (p. ex. Dolby CP950/CP950A).
 
-Els documents originals són propietat de la SMPTE / ISDCF. Aquest fitxer
-només enllaça a les fonts oficials i en resumeix l'abast — no en redistribueix
-el contingut.
+Els documents originals són propietat de la SMPTE / ISDCF. Els PDFs complets
+es guarden a `docs/specs/` a petició explícita del mantenidor del repositori;
+aquest fitxer n'enllaça també les fonts oficials per referència i verificació.
 
 ## 1. Format del bitstream IAB
 
 - **SMPTE ST 2098-1:2018** — *Immersive Audio Metadata*
+  [docs/specs/ST2098-1_2018_Immersive_Audio_Metadata.pdf](specs/ST2098-1_2018_Immersive_Audio_Metadata.pdf) ·
   https://pub.smpte.org/pub/st2098-1/st2098-1-2018.pdf
 
 - **SMPTE ST 2098-2:2022** — *Immersive Audio Bitstream Specification*
   (revisió de l'ST 2098-2:2019; defineix el bitstream IAB en si —
   el que llegeix/genera `cineia.cpp`)
+  [docs/specs/ST2098-2_2022_Immersive_Audio_Bitstream.pdf](specs/ST2098-2_2022_Immersive_Audio_Bitstream.pdf) ·
   https://pub.smpte.org/pub/st2098-2/st2098-2-2022.pdf
   Revisió pública en curs (Public Committee Draft): https://github.com/SMPTE/st2098-2
 
 - **SMPTE ST 2098-5:2018** — *D-Cinema Immersive Audio Channels and Soundfield Groups*
+  [docs/specs/ST2098-5_2018_Immersive_Audio_Channels.pdf](specs/ST2098-5_2018_Immersive_Audio_Channels.pdf) ·
   https://pub.smpte.org/pub/st2098-5/st2098-5-2018.pdf
 
 - **SMPTE EG 2098-3:2020** — *Immersive Audio Renderer Expectations and Testing
   Recommendations* (guia d'enginyeria, no normativa)
+  [docs/specs/EG2098-3_2020_Renderer_Testing.pdf](specs/EG2098-3_2020_Renderer_Testing.pdf) ·
   https://pub.smpte.org/latest/eg2098-3/eg2098-3-2020.pdf
 
 - **SMPTE RDD 57:2021** — *IAB Application Profile 1* (la constricció concreta
   que implementa `CineIA_CLI` — límits de canals/objectes, bit depth, frame rate...)
+  [docs/specs/RDD57_2021_IAB_Application_Profile_1.pdf](specs/RDD57_2021_IAB_Application_Profile_1.pdf) ·
   https://doi.org/10.5594/SMPTE.RDD57.2021
 
 - **ISDCF Document 15** — nota tècnica sobre l'ST 2098-2 / IAB Profile 1
+  [docs/specs/ISDCF-Doc15_IAB_Profile_1.pdf](specs/ISDCF-Doc15_IAB_Profile_1.pdf) ·
   https://files.isdcf.com/papers/ISDCF-Doc15-IAB-Profile-1-202006012.pdf
 
 ## 2. Empaquetat del bitstream en un fitxer MXF (DCP)
@@ -41,6 +47,7 @@ el contingut.
   `MaxObjectCount`, `FirstFrame`, `IAB Sample Rate`...). Aquesta és
   l'especificació que `main.cpp` implementa via `ASDCP::ATMOS::MXFWriter` /
   `AtmosDescriptor`.
+  [docs/specs/ST429-18_2019_Immersive_Audio_Track_File.pdf](specs/ST429-18_2019_Immersive_Audio_Track_File.pdf) ·
   https://pub.smpte.org/doc/st429-18/20190603-pub/st429-18-2019.pdf
 
 ## 3. Transport en xarxa: servidor → processador de so
@@ -52,6 +59,7 @@ el contingut.
   document — categoria on encaixa el CP950/CP950A) demana els frames
   d'àudio immersiu al servidor, i (b) el senyal de sincronització AES/EBU
   que permet reproduir-los alineats amb la imatge.
+  [docs/specs/ST430-14_2015_Sync_Aux_Data_Transfer.pdf](specs/ST430-14_2015_Sync_Aux_Data_Transfer.pdf) ·
   https://pub.smpte.org/doc/st430-14/20150801-pub/st0430-14-2015.pdf
 
 - **SMPTE ST 430-10** — *D-Cinema Operations — Auxiliary Content
