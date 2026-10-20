@@ -3,7 +3,7 @@
 	url = https://github.com/DTSProAudio/iab-renderer.git
 [submodule "external/asdcplib"]
 	path = external/asdcplib
-	url = https://github.com/cinecert/asdcplib.git
+	url = https://github.com/JaumeAP/asdcplib.git
 [submodule "external/indicators"]
 	path = external/indicators
 	url = https://github.com/p-ranav/indicators.git
