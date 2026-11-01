@@ -14,8 +14,8 @@ set(CMAKE_INSTALL_RPATH_USE_LINK_PATH ON)
 # Include iab-renderer library
 add_subdirectory(external/iab-renderer)
 set(IABLib_HEADER_PATH
-    external/iab-renderer/include
-    external/iab-renderer/src/lib
+    external/iab-renderer/iablib/include
+    external/iab-renderer/iablib/src/lib
 )
 
 # Include asdcplib library
